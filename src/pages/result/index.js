@@ -48,13 +48,13 @@ function Result() {
               >
                 <Image
                   className="object-contain"
-                  src={score > 8 ? "/images/trophy.png" : "/images/over.png"}
+                  src={score > 14 ? "/images/trophy.png" : "/images/over.png"}
                   alt="Result"
-                  width={score > 8 ? 130 : 184}
-                  height={score > 8 ? 150 : 152}
+                  width={score > 14 ? 130 : 184}
+                  height={score > 14 ? 150 : 152}
                 />
                {
-                score<8 &&  <Image
+                score<15 &&  <Image
                   className="object-contain absolute -top-5 right-0 "
                   src={"/images/question.png"}
                   alt="Result"
@@ -71,10 +71,10 @@ function Result() {
               >
                 <h2 className="text-6xl quantico-bold">{score}/10</h2>
                 <h4 className="text-2xl quantico-bold mt-2">
-                  {score > 8 ? "CONGRATULATIONS!" : "Not quite there yet!"}
+                  {score > 14 ? "CONGRATULATIONS!" : "Not quite there yet!"}
                 </h4>
                 <p className="quantico-regular text-base mt-1">
-                  {score > 8
+                  {score > 14
                     ? "You passed the quiz — great job."
                     : "Try again to pass the quiz"}
                 </p>
@@ -87,7 +87,7 @@ function Result() {
             className={`flex flex-col gap-6 transform transition-all duration-1000 ease-out delay-700 ${isLoaded ? "translate-y-0" : "translate-y-[100px]"
               }`}
           >
-            {score < 8 && (
+            {score < 14 && (
 
 
               <button
