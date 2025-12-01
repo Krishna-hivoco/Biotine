@@ -410,7 +410,7 @@ const Quiz = () => {
                   className={`
                   flex items-center justify-between 
                   outline outline-[#4B2500] p-3.5 rounded-sm 
-                  capitalize font-semibold text-left text-base/5 text-black111 tracking-wide w-full
+                  capitalize font-semibold text-left text-base/5 text-[#4B2500] tracking-wide w-full
                   transition-all
                   ${!selectedOption
                       ? "cursor-pointer hover:bg-[#703513]/10"
