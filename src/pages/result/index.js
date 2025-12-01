@@ -93,7 +93,7 @@ function Result() {
               <button
                 onClick={() => router.push("/")}
 
-                className={`w-full rounded-lg font-medium text-xl/6 text-[#4B2500] text-center py-3 transition-all backdrop-blur-sm bg-[#4B250014]`}
+                className={`w-full rounded-lg border border-[#4B2500] font-medium text-xl/6 text-[#4B2500] text-center py-3 transition-all backdrop-blur-sm bg-[#4B250014]`}
               >
                 Play Again
               </button>
