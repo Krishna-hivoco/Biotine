@@ -1,7 +1,7 @@
 const ProgressBar = ({ count, animation }) => {
   console.log(count);
   
-  const totalSteps = 10; // (10 dots total)
+  const totalSteps = 18; // (10 dots total)
 
   return (
     <div

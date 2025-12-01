@@ -387,10 +387,10 @@ const App = () => {
               <button
                 onClick={goForward}
                 disabled={!Name.trim()}
-                className={`py-3 px-3 rounded-sm font-bold text-xl/6.5 text-center cursor-pointer transition-all
+                className={`py-3 px-3 rounded-2xl font-bold text-xl/6.5 text-center cursor-pointer transition-all mt-10
                   ${Name.trim()
-                    ? "text-[#4B2500]"
-                    : "text-[#4B2500] opacity-50 cursor-not-allowed"
+                    ? "text-white bg-[#4B2500]"
+                    : "text-white opacity-50 bg-[#4B2500] cursor-not-allowed"
                   }
                 `}
               >

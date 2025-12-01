@@ -17,7 +17,7 @@ const AnswerPopup = ({ isVisible, isCorrect }) => {
   if (!isVisible) return null;
 
   return (
-    <div className="fixed inset-0 bg-black/80 flex items-center justify-center z-[100]">
+    <div className="fixed inset-0 bg-black/80 backdrop-blur-sm flex items-center justify-center z-[100]">
       {isCorrect ? (
         <div className="flex flex-col gap-2 text-center justify-center items-center">
           <Image
@@ -380,13 +380,13 @@ const Quiz = () => {
 
           <ProgressBar
             animation={animation}
-            count={currentQuestion.question_id + 1}
+            count={currentQuestionIndex + 1}
           />
         </section>
 
         <section className="w-full flex flex-col gap-6 px-6 relative z-50 mt-6">
           <div className="font-semibold flex justify-center items-center h-[196px] backdrop-blur-xs bg-[#4B25000D] text-base/5 tracking-wide outline-[#4B2500] outline-1 text-[#4B2500] p-3.5 rounded-2xl">
-            {`Q${currentQuestion.question_id + 1}.`} {currentQuestion.question}
+            {currentQuestion.question}
           </div>
 
           <div
@@ -410,7 +410,7 @@ const Quiz = () => {
                   className={`
                   flex items-center justify-between 
                   outline outline-[#4B2500] p-3.5 rounded-sm 
-                  capitalize font-semibold text-base/5 text-black111 tracking-wide w-full
+                  capitalize font-semibold text-left text-base/5 text-black111 tracking-wide w-full
                   transition-all
                   ${!selectedOption
                       ? "cursor-pointer hover:bg-[#703513]/10"

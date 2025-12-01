@@ -34,7 +34,7 @@ function Result() {
           <div className="flex flex-1 flex-col w-full">
             {/* Logo - slides from 100px to actual position */}
             <div
-              className={`mx-auto w-fit pt-20 transform transition-all duration-1000 ease-out ${isLoaded ? "translate-y-0" : "-translate-y-[100px]"
+              className={`mx-auto w-fit pt-10 transform transition-all duration-1000 ease-out ${isLoaded ? "translate-y-0" : "-translate-y-[100px]"
                 }`}
             >
               <Image src={"/logos/Nutrilite-logo.png"} alt="Logo" width={234} height={80} />
@@ -69,7 +69,7 @@ function Result() {
                 className={`rounded-2xl p-7 w-full border border-[#4B25001A] backdrop-blur-sm shadow-sm text-center transform transition-all  text-[#4B2500] duration-1000 ease-out delay-500 bg-[#4B25001A] ${isLoaded ? "translate-y-0" : "translate-y-[100px]"
                   }`}
               >
-                <h2 className="text-6xl quantico-bold">{score}/10</h2>
+                <h2 className="text-6xl quantico-bold">{score}/18</h2>
                 <h4 className="text-2xl quantico-bold mt-2">
                   {score > 14 ? "CONGRATULATIONS!" : "Not quite there yet!"}
                 </h4>
