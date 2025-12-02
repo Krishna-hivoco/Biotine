@@ -463,7 +463,7 @@ const Quiz = () => {
           <button
             onClick={handleSkip}
             disabled={isQuizCompleted || selectedOption !== null}
-            className={`w-[154px] rounded-lg font-semibold text-xl/6 text-[#4B2500] text-center py-3 transition-all ${selectedOption !== null
+            className={`w-1/2 md:w-[154px] rounded-lg font-semibold text-xl/6 text-[#4B2500] text-center py-3 transition-all ${selectedOption !== null
                 ? "cursor-not-allowed backdrop-blur-lg bg-[#4B250026]"
                 : "hover:bg-[#4B2500] hover:text-white backdrop-blur-lg bg-[#4B250026]"
               }`}
@@ -474,7 +474,7 @@ const Quiz = () => {
           <button
             onClick={handleSubmit}
             disabled={isQuizCompleted || !selectedOption}
-            className={`w-[154px] rounded-lg font-semibold text-xl/6 text-center py-3 transition-all ${selectedOption
+            className={`w-1/2 md:w-[154px] rounded-lg font-semibold text-xl/6 text-center py-3 transition-all ${selectedOption
                 ? "text-white bg-[#4B2500] cursor-pointer"
                 : "text-[#4B2500] backdrop-blur-lg bg-[#4B250026] cursor-not-allowed"
               }`}
